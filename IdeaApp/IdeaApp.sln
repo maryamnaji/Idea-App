@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdeaApp.API", "IdeaApp.API\IdeaApp.API.csproj", "{6A77400E-B2FE-4F0F-B83C-830B5F791742}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdeaApp.UI", "IdeaApp.UI\IdeaApp.UI.csproj", "{A57F200D-B0C7-4A73-B4E6-F6250C70057C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6A77400E-B2FE-4F0F-B83C-830B5F791742}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A77400E-B2FE-4F0F-B83C-830B5F791742}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A77400E-B2FE-4F0F-B83C-830B5F791742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A57F200D-B0C7-4A73-B4E6-F6250C70057C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A57F200D-B0C7-4A73-B4E6-F6250C70057C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A57F200D-B0C7-4A73-B4E6-F6250C70057C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A57F200D-B0C7-4A73-B4E6-F6250C70057C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
