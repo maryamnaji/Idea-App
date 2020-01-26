@@ -1,31 +1,122 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
+﻿@using  IdeaApp.Entities.Models;
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+@model List<Idea>
+
+
+<!--- Welcome Section -->
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">Idea Application</h1>
+        </div>
+        <hr />
+        <div class="col-12">
+            <p class="lead"> In a metus orci. Phasellus tempor nisi ornare, placerat mi ac, aliquet tellus. Ut convallis mauris volutpat purus scelerisque ornare. Aenean hendrerit hendrerit eros, porttitor hendrerit risus accumsan condimentum. Sed tempor a odio at bibendum. Quisque vehicula convallis purus at ornare. Curabitur aliquam nulla nec est commodo feugiat. Aliquam suscipit consequat facilisis. Mauris et aliquam lectus.</p>
+        </div>
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<!--- Two Column Section -->
+<div class="container-fluid padding features">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-6 idea-feature">
+            <i class="far fa-lightbulb features-icon "></i>
+            <h3>Submit an idea</h3>
+            <p>Morbi vel leo id nisl ornare dictum. Nulla finibus semper tempor. Sed ut nisl ut nisl maximus efficitur. Nunc ultrices hendrerit odio at dictum</p>
+            <button type="button" class="btn btn-collabortate">Collaborate</button>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 idea-feature">
+            <i class="fas fa-lightbulb  features-icon "></i>
+            <h3>Share your view</h3>
+            <p>Morbi vel leo id nisl ornare dictum. Nulla finibus semper tempor. Sed ut nisl ut nisl maximus efficitur. Nunc ultrices hendrerit odio at dictum</p>
+            <button type="button" class="btn btn-collabortate">Collaborate</button>
+        </div>
+
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+</div>
+
+<!--- Two Column Section -->
+<div class="container-fluid padding text-pic ">
+    <div class="row padding">
+        <div class="col-lg-6">
+            <h2>It's important for us what's in your mind...</h2>
+            <p> Aenean hendrerit hendrerit eros, porttitor hendrerit risus accumsan condimentum. Sed tempor a odio at bibendum. Quisque vehicula convallis purus at ornare. Curabitur aliquam nulla nec est commodo feugiat. Aliquam suscipit consequat facilisis. Mauris et aliquam lectus.</p>
+            <br />
+            <p> Aenean hendrerit hendrerit eros, porttitor hendrerit risus accumsan condimentum. Sed tempor a odio at bibendum. Quisque vehicula convallis purus at ornare. Curabitur aliquam nulla nec est commodo feugiat. Aliquam suscipit consequat facilisis. Mauris et aliquam lectus.</p>
+            <br />
+            <p> Aenean hendrerit hendrerit eros, porttitor hendrerit risus accumsan condimentum. Sed tempor a odio at bibendum. Quisque vehicula convallis purus at ornare. Curabitur aliquam nulla nec est commodo feugiat. Aliquam suscipit consequat facilisis. Mauris et aliquam lectus.</p>
+            <br />
+            <!--<button type="button" class="btn btn-collabortate">Learn More</button>-->
+        </div>
+        <div class="col-lg-6">
+            <img src="~/Content/Images/4.jpg" class="img-fluid" />
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+</div>
+
+<!--- click Section -->
+<button class="click" data-toggle="collapse" data-target="#click">Click for more</button>
+<div id="click" class="collapse">
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-sm-6 col-md-3">
+                <img class="gif" src="~/Content/Images/64e775_9a88dda98cc548538bbd19fed9c9fa3c_mv2.gif">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img class="gif" src="~/Content/Images/64e775_9a88dda98cc548538bbd19fed9c9fa3c_mv2.gif">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img class="gif" src="~/Content/Images/64e775_9a88dda98cc548538bbd19fed9c9fa3c_mv2.gif">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img class="gif" src="~/Content/Images/64e775_9a88dda98cc548538bbd19fed9c9fa3c_mv2.gif">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--- Meet the team -->
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12 recent">
+            <h5 class="display-4">Recent topic</h5>
+        </div>
+        <hr class="light" />
+    </div>
+</div>
+
+<!--- Cards -->
+<div class="container-fluid  cards">
+
+    <div class="row ">
+        @foreach (var idea in Model)
+        {
+            <div class="col-md-6">
+                <div class="card">
+                    <img class="card-img-top" src="~/Content/Images/business-growth_large.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">@idea.Title</h4>
+                        <p class="card-text">@idea.Description</p>
+                        @Html.ActionLink("See more","Details","Ideas",new { id=idea.Id },new { @class="btn btn-outline-secondary"})
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!--- Two Column Section -->
+<!--- Connect -->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-12 social padding">
+
+        </div>
+        <div class="col-12 social padding">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+        </div>
     </div>
 </div>
